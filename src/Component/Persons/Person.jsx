@@ -1,4 +1,4 @@
-import Hotjar from "@hotjar/browser";
+import HotjarScript from "../Hotjar/HotjarScript"
 
 
 const people = [
@@ -65,10 +65,6 @@ const people = [
     // More people...
   ]
 
-  const siteId = 3886065;
-  const hotjarVersion = 6;
-  
-  Hotjar.init(siteId, hotjarVersion);
   
   export default function Person () {
     return (
@@ -95,6 +91,7 @@ const people = [
             ))}
           </ul>
         </div>
+        <HotjarScript />
       </div>
     )
   }

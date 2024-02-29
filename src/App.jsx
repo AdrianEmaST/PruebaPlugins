@@ -1,19 +1,15 @@
 import './App.css'
-import Hotjar from '@hotjar/browser'
 import Person from './Component/Persons/Person'
+import HotjarScript from './Component/Hotjar/HotjarScript';
 
 function App() {
-  const siteId = 3886065;
-  const hotjarVersion = 6;
-  
-  Hotjar.init(siteId, hotjarVersion);
 
   return (
 
     <>
     
       <Person />
-    
+      <HotjarScript />
     </>
 
 
