@@ -1,3 +1,6 @@
+import Hotjar from "@hotjar/browser";
+
+
 const people = [
     {
       name: 'Leslie Alexander',
@@ -61,6 +64,11 @@ const people = [
       },
     // More people...
   ]
+
+  const siteId = 3886065;
+  const hotjarVersion = 6;
+  
+  Hotjar.init(siteId, hotjarVersion);
   
   export default function Person () {
     return (
